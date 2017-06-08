@@ -12,6 +12,8 @@ namespace Module13_02
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            //以後遇上.xyz就不要繞了
+            routes.IgnoreRoute("{resource}.xyz/{*pathInfo}");
 
             routes.MapRoute(
                 name: "Default",
